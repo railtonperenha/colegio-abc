@@ -42,6 +42,7 @@ html {
 }
 
 .button:hover {
-    background-color: var(--person-blue);
+    border: 0.2rem solid var(--person-red);
+    background-color: var(--person-red);
     color: var(--primary-text);
 }

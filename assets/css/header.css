@@ -12,8 +12,13 @@ header {
     justify-content: space-between;
 }
 
-.logo img {
+.logo a img {
     width: 15rem;
+    transition: all ease 0.5s;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
 }
 
 .menu-opener {

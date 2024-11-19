@@ -106,7 +106,8 @@
 
 @media (width > 900px) {
     .ambient-cont .text {
-        width: 100rem;
+        font-size: 1.6rem;
+        width: 65rem;
         line-height: 2.3rem;
     }
 }

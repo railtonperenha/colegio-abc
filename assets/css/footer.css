@@ -1,0 +1,67 @@
+footer {
+    background-color: var(--person-blue);
+    box-shadow: -10px 0 20px #0000002f;
+}
+
+.footer-items {
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.logo-white a img {
+    width: 15rem;
+    margin-bottom: 2rem;
+}
+
+.whatsapp a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    color: var(--primary-text);
+    text-decoration: none;
+}
+
+.logo-whats i {
+    font-size: 4rem;
+    margin-right: 1rem;
+    
+}
+
+.text-whats {
+    text-align: left;
+}
+
+.text-whats .text {
+    font-family: var(--font-lato);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.text-whats .phone {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.footer-items .subtitle {
+    font-family: var(--font-lato);
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: var(--primary-text);
+}
+
+/* RESPOSIVE */
+@media (width > 600px) {
+    .footer-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-items .subtitle {
+        font-size: 1.4rem;
+        width: 15rem;
+        text-align: right;
+    }
+}
