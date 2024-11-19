@@ -1,0 +1,112 @@
+.ambients {
+    padding: 8rem 4rem;
+    text-align: center;
+    background-color: var(--person-blue);
+}
+
+.ambient-cont .title {
+    font-family: var(--font-lato);
+    color: var(--primary-text);
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 0 auto;
+    letter-spacing: 0.3rem;
+    margin-bottom: 5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    text-align: center;
+}
+
+.grid .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 2rem;
+    gap: 1rem;
+    padding: 2rem;
+    margin: 0 auto;
+    background-color: var(--person-blue-bg);
+    transition: all ease 0.5s;
+}
+
+.grid .item:hover {
+    transform: scale(1.1);
+}
+
+.item img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.item .subtitle {
+    font-family: var(--font-lato);
+    color: var(--primary-text);
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+
+.turma-reduzida {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 5rem auto;
+}
+
+.turma-reduzida img {
+    width: 8rem;
+}
+
+.turma-reduzida .title-turma {
+    font-family: var(--font-lato);
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--person-red);
+    text-transform: uppercase;
+}
+
+.ambient-cont .text {
+    font-family: var(--font-lato);
+    font-size: 1.3rem;
+    color: var(--primary-text);
+    font-weight: 100;
+    text-align: center;
+    line-height: 1.4rem;
+    letter-spacing: 0.1rem;
+    margin: 0 auto;
+}
+
+/* RESPONSIVIDADE */
+@media (width > 600px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .turma-reduzida img {
+        width: 13rem;
+    }
+
+    .turma-reduzida .title-turma {
+        font-size: 2.5rem;
+    }
+
+    .ambient-cont .text {
+        font-size: 1.3rem;
+        line-height: 2rem;
+        font-weight: 300;
+    }
+}
+
+@media (width > 900px) {
+    .ambient-cont .text {
+        width: 100rem;
+        line-height: 2.3rem;
+    }
+}

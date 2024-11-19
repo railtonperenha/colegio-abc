@@ -1,0 +1,56 @@
+.hero {
+    background-image: url(../imgs/children-colored-50.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hero-container {
+    width: 30rem;
+    text-align: center;
+    margin: auto;
+}
+
+.hero-container .icon {
+    width: 6rem;
+    margin-bottom: 3rem;
+}
+
+.hero-container .title {
+    font-family: var(--font-lato);
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--person-blue);
+    margin-bottom: 3rem;
+    
+}
+
+.hero-container a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* RESPONSIVIDADE */
+
+@media (width > 600px) {
+    .hero-container {
+        width: 50rem;
+    }
+
+    .hero-container .icon {
+        width: 10rem;
+    }
+
+    .hero-container .title {
+        font-size: 3.5rem;
+    }
+    
+    .hero-container a {
+        font-size: 1.8rem;
+    }
+}

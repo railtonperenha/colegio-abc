@@ -1,0 +1,51 @@
+.banner {
+    background-image: url(../imgs/home_bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+}
+
+.img-bg {
+    display: none;
+}
+
+.text-banner {
+    width: 30rem;
+    height: 30rem;
+    margin: auto;
+    padding: 3rem;
+    font-family: var(--font-text);
+    background-color: aliceblue;
+}
+
+.text-banner .title {
+    font-size: 3.8rem;
+    font-weight: 100;
+    margin-bottom: 2.5rem;
+}
+
+.text-banner a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* RESPONSIVE BANNER */
+@media (width > 600px) {
+    .banner {
+        background-image: none;
+        height: 80vh;
+        justify-content: space-between;
+        gap: 5rem;
+    }
+
+    .img-bg {
+        display: inline-block;
+        width: auto;
+        height: auto;
+        background-repeat: repeat;
+    }
+}
